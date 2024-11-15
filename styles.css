@@ -1,0 +1,323 @@
+/* Generali */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    background: rgba(141, 118, 163, 0.6); /* Lavanda per il testo principale */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fccea5; /* Arancio chiaro */
+}
+
+.hero p {
+    margin: 1rem 0;
+    color: #fffacd; /* Giallo chiaro */
+}
+
+.btn {
+    background: #ff8c00; /* Arancione brillante */
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ff4500; /* Arancio scuro */
+}
+
+.about, .services {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about img.responsive-img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(141, 118, 163, 0.6); /* Lavanda per il testo principale */
+}
+
+.service-card {
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f3e5f5; /* Viola chiaro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    color: #4b0082; /* Viola scuro */
+    min-height: 400px; /* Altezza minima per uniformare */
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #4b0082;
+}
+
+.service-card p {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(75, 0, 130, 0.8); /* Viola scuro */
+    color: white;
+    padding: 1rem 0;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#titolo-servizi{
+    display: flex;
+    justify-content: center;
+    background: rgba(141, 118, 163, 0.6); /* Lavanda per il testo principale */
+}
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7; /* Regola l'opacità se vuoi rendere il testo più leggibile */
+}
+
+.secondop {
+    background: rgba(141, 118, 163, 0.6); /* Lavanda per il testo principale */
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    color: rgba(12, 12, 12, 0.9);
+    font-weight: 600;
+    margin-top: 500px;
+}
+
+.testata{
+    background: rgba(141, 118, 163, 0.6); /* Lavanda per il testo principale */
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    color: rgba(12, 12, 12, 0.9);
+    font-weight: 600;
+    margin-top: -100px;
+}
+
+#about {
+    position: relative;
+    height: 100vh; /* Imposta l'altezza della sezione */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    overflow: hidden; /* Nasconde eventuali parti dell'immagine fuori dalla sezione */
+}
+
+.vertical-navbar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    background-color: rgba(75, 0, 130, 0.8); /* Viola scuro */
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.nav-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.nav-icon:hover {
+    color: #ffdab9; /* Colore arancio chiaro in hover */
+    transform: scale(1.2); /* Effetto di ingrandimento in hover */
+}
+
+.nav-icon i {
+    pointer-events: none;
+}
+
+#chisono{
+    font-weight: bolder;
+}
+
+
+
+.image-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(141, 118, 163, 0.3);
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    position: relative;
+    background: rgba(141, 118, 163, 0.3);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.image-text-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.image-text-block p {
+    font-size: 1.1rem;
+    color: rgba(12, 12, 12, 0.9);
+}
+
+.image-text-block:hover {
+    transform: translateY(-10px); /* Effetto di sollevamento al passaggio del mouse */
+}
+
+.top-left {
+    align-self: flex-start;
+}
+
+.center {
+    align-self: center;
+}
+
+.bottom-right {
+    align-self: flex-end;
+}
+
+.about-alessia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f0e6f6;
+    overflow: hidden; /* Evita che le icone escano fuori dal contenitore */
+}
+
+.icon-snowflake {
+    position: absolute;
+    color: #d6b8e6;
+    font-size: 20px;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    pointer-events: none;
+}
+
+/* Animazione di caduta per le icone */
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(2500px) translateX(20px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.about-alessia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #f0e6f6;
+    overflow: hidden;
+}
+
+
+
+/* Modifica i margini per creare lo scalino ridotto */
+.top-left {
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.center {
+    align-self: center;
+    margin-top: -360px; /* Sovrapposizione ridotta rispetto alla prima card */
+}
+
+.bottom-right {
+    align-self: flex-end;
+    margin-top: -360px; /* Sovrapposizione ridotta rispetto alla seconda card */
+}
+
+
